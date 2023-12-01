@@ -140,7 +140,7 @@ return {
 			plugins = {
 				gitsigns = true,
 				tmux = true,
-				kitty = { enabled = false, font = "+2" },
+				alacritty = { enabled = false, font = "+2" },
 			},
 		},
 		keys = { { "<leader>z", "<cmd>ZenMode<cr>", desc = "Zen Mode" } },
@@ -148,6 +148,7 @@ return {
 
 	{
 		"nvimdev/dashboard-nvim",
+		enabled = false, -- disable dashboard temporarily.
 		event = "VimEnter",
 		opts = function(_, opts)
 			local logo = [[

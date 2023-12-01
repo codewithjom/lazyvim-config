@@ -205,4 +205,9 @@ return {
 			require("telescope").load_extension("file_browser")
 		end,
 	},
+	{
+		"windwp/nvim-autopairs",
+		event = "InsertEnter",
+		opts = {},
+	},
 }
